@@ -2,6 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const { createClient } = require("@supabase/supabase-js");
 const { nanoid } = require("nanoid");
 require("dotenv").config();
+require("./keep_alive");
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const SUPABASE_URL = process.env.SUPABASE_URL;
